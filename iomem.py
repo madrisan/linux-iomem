@@ -39,7 +39,7 @@ def main():
     for line in data:
         (range, takenby) = line.split(':', 1)
         (b, e) = range.strip().split('-', 1)
-        sys.stdout.write('%d bytes to %d bytes (%d M to %d M) - %s\n' % (
+        sys.stdout.write('%d to %d bytes (%d to %d Mb) - %s\n' % (
             int(b, 16), int(e, 16), toMb(b), toMb(e), takenby.strip()))
 
 if __name__ == '__main__':
