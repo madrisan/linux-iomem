@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 # Display I/O memory map in Linux 2.4+
-# Copyright (C) 2015 Davide Madrisan <davide.madrisan.gmail.com>
+# Copyright (C) 2015 Davide Madrisan <davide.madrisan@gmail.com>
 
 import os
 import sys
@@ -10,7 +10,7 @@ __author__ = "Davide Madrisan"
 __copyright__ = "Copyright 2015 Davide Madrisan"
 __license__ = "GPLv3"
 __version__ = "1"
-__email__ = "davide.madrisan.gmail.com"
+__email__ = "davide.madrisan@gmail.com"
 __status__ = "stable"
 
 def die(exitcode, message):
