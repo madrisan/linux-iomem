@@ -15,7 +15,7 @@ __status__ = "stable"
 
 def die(exitcode, message):
     "Print an error message and exit with code 'errorcode'"
-    sys.stderr.write('pyoocs: Fatal error: %s\n' % message)
+    sys.stderr.write('iomem: Fatal error: %s\n' % message)
     sys.exit(exitcode)
 
 def readfile(filename):
