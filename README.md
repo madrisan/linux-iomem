@@ -33,3 +33,10 @@ This script parses `/proc/iomem` and display in a human readable format the curr
 3112558592 to 3121393663 bytes (2968 to 2976 Mb) - System RAM
 ...
 ```
+
+#### Note
+
+Starting from Linux kernel 4.4, `/proc/iomem` only expose physical resource addresses to privileged
+(`CAP_SYS_ADMIN`) users. See the kernel commit [817646](https://lore.kernel.org/patchwork/patch/817646/).
+
+In this case, you have to switch to `root` or just to prepend this script command with `sudo`.
