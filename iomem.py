@@ -20,14 +20,11 @@ def die(exitcode, message):
 
 def readfile(filename):
     "Returns a list containing the lines of 'filename'"
-    if not os.path.isfile(filename):
-        die(1, 'No such file: ' + filename)
-
-    fd = open(filename, 'r')
     try:
-       content = fd.readlines()
-    except:
-       die(1, 'Error opening the file ' + filename)
+        fd = open(filename, 'r')
+        content = fd.readlines()
+    except IOError as e:
+        die(1, e)
     return content
 
 def toMb(number):
